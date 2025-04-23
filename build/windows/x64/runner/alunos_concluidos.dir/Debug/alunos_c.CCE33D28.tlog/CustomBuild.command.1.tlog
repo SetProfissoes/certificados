@@ -1,0 +1,10 @@
+^C:\USERS\KAUAK\DESKTOP\PROJETO_CONCLUIDOS\ALUNOS_CONCLUIDOS\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/kauak/Desktop/Projeto_Concluidos/alunos_concluidos/windows -BC:/Users/kauak/Desktop/Projeto_Concluidos/alunos_concluidos/build/windows/x64 --check-stamp-file C:/Users/kauak/Desktop/Projeto_Concluidos/alunos_concluidos/build/windows/x64/runner/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

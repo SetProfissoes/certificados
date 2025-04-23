@@ -1,0 +1,10 @@
+^C:\USERS\KAUAK\DESKTOP\PROJETO_CONCLUIDOS\ALUNOS_CONCLUIDOS\BUILD\WINDOWS\X64\CMAKEFILES\5D3AA6DA0B95D40B7FEE384180DFEE0C\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
